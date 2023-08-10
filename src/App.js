@@ -33,7 +33,7 @@ function App() {
     if (data.status == 401 || !data) {
       console.log("user not valid");
     } else {
-      console.log("user verify");
+      // console.log("user verify");
       setLoginData(data);
       // history("/dash");
     }

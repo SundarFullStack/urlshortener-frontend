@@ -14,22 +14,22 @@ const ForgotPassword = () => {
 
   const [message, setMessage] = useState("");
 
-  // const userValid = async () => {
-  //   const res = await fetch(`/forgotpassword/${id}/${token}`, {
-  //     method: "GET",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //   });
+  const userValid = async () => {
+    const res = await fetch(`/forgotpassword/${id}/${token}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
 
-  //   const data = await res.json();
+    const data = await res.json();
 
-  //   if (data.status == 201) {
-  //     console.log("user valid");
-  //   } else {
-  //     history("*");
-  //   }
-  // };
+    if (data.status == 201) {
+      console.log("user valid");
+    } else {
+      history("*");
+    }
+  };
 
   const setval = (e) => {
     setPassword(e.target.value);
@@ -68,12 +68,12 @@ const ForgotPassword = () => {
     }
   };
 
-  // useEffect(() => {
-  //   userValid();
-  //   setTimeout(() => {
-  //     setData(true);
-  //   }, 3000);
-  // }, []);
+  useEffect(() => {
+    userValid();
+    setTimeout(() => {
+      setData(true);
+    }, 3000);
+  }, []);
 
   return (
     <>
