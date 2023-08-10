@@ -62,7 +62,7 @@ const Dashboard = () => {
         position: "top-center",
       });
     } else {
-      const res = await fetch("http://localhost:8010/url", {
+      const res = await fetch("https://urlshortner-backend-jwc7.onrender.com/url", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -92,7 +92,7 @@ const Dashboard = () => {
   const fetchShortUrl = () => {
     axios
       .get(
-        `http://localhost:8010/urlData/${
+        `https://urlshortner-backend-jwc7.onrender.com/urlData/${
           logindata ? logindata.ValidUserOne.email : ""
         }`
       )
@@ -110,7 +110,7 @@ const Dashboard = () => {
   const fetchShortUrlHistoryCount = () => {
     // console.log(shortUrl);
     axios
-      .get(`http://localhost:8010/analytics/${shortUrl ? shortUrl : ""}`)
+      .get(`https://urlshortner-backend-jwc7.onrender.com/analytics/${shortUrl ? shortUrl : ""}`)
       .then((response) => {
         if (response) {
           let result = response.data;
