@@ -35,7 +35,7 @@ const Dashboard = () => {
     if (data.status == 401 || !data) {
       history("*");
     } else {
-      console.log("user verify");
+      // console.log("user verify");
       setLoginData(data);
       history("");
     }
