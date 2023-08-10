@@ -67,7 +67,7 @@ const Register = () => {
     } else {
       // console.log("user registration succesfully done");
 
-      const data = await fetch("/register", {
+      const data = await fetch("https://urlshortner-backend-jwc7.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
