@@ -22,7 +22,7 @@ const Dashboard = () => {
   const DashboardValid = async () => {
     let token = localStorage.getItem("usersdatatoken");
 
-    const res = await fetch("/validuser", {
+    const res = await fetch("https://urlshortner-backend-jwc7.onrender.com/validuser", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
