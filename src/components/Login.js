@@ -49,7 +49,7 @@ const Login = () => {
     } else {
       // console.log("user login succesfully done");
 
-      const data = await fetch("/login", {
+      const data = await fetch("https://urlshortner-backend-jwc7.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
