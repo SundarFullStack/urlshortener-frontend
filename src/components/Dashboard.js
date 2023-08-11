@@ -151,7 +151,7 @@ const Dashboard = () => {
             onClick={fetchShortUrlHistoryCount}
             rel="noopener noreferrer"
             style={{ marginLeft: "10px", textDecoration: "none" }}
-          >{`http://localhost:8010/${shortUrl}`}</a>
+          >{`https://urlshortner-backend-jwc7.onrender.com/${shortUrl}`}</a>
         </h3>
         {/* Total clicks */}
         <h4 style={{ marginTop: "20px" }}>Total Number Clicks: {Clickcount}</h4>
