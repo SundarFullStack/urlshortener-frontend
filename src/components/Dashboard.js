@@ -146,7 +146,7 @@ const Dashboard = () => {
         <h3>
           Click your shorted Url:
           <a
-            href={`http://localhost:8010/${shortUrl}`}
+            href={`https://urlshortner-backend-jwc7.onrender.com/${shortUrl}`}
             target="_blank"
             onClick={fetchShortUrlHistoryCount}
             rel="noopener noreferrer"
